@@ -1,0 +1,282 @@
+:root{
+    --main-color: #c3858f;
+    --black: #EFBAD3;
+    --bg: #ffeaf4;
+    --border: 0.2rem solid #c3858f;
+    font-size: 10px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom:  0.2rem solid #c3858f;
+    background-color: var(--bg) ;
+}
+
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 2.5rem;
+    color: #222420;
+    text-decoration: none;
+    font-weight: 800; 
+}
+
+.navbar a:hover{
+    color: #EFBAD3;
+    font-size: 3rem;
+    border-bottom: -2rem;
+}
+
+.icons img{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.botao{
+    background: #c3858f;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+}
+
+.home-container{
+    background-image: url(./img/delicious-bubble-tea-drink-with-milk.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section{
+    
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content{
+    max-width: 60rem;
+
+}
+
+.content h3{
+    color: #222420;
+    font-size: 6rem;
+}
+
+.content p{
+    color: #222420;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.title{
+    font-size: 4rem;
+    color: #222420;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.title span{
+    color: #c3858f;
+    text-transform: uppercase;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background-color: #ffeefb;
+}
+
+.about .row .content{
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #222420;
+}
+
+.about .row .content p{
+    font: 1.6rem;
+    color: #222420;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    text-align: center;
+    border: 0.2rem solid#c3858f;
+    padding: 5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.menu .box-container .box:hover{
+    background-color: #ffeefb;
+}
+
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color: #222420;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box h1{
+    color: #222420;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #222420;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover>*{
+    color: #EFBAD3;
+    transform: scale(1.1);
+}
+
+.review .box-container .box{
+    border: var(--border);
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #ffeefb;
+    padding: 3rem 2rem;
+    
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    color: #222420;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.review .box {
+  text-align: center;     /* centraliza textos e inline-blocks */
+  display: flex;
+  flex-direction: column; /* organiza tudo em coluna */
+  align-items: center;    /* centraliza horizontalmente */
+  justify-content: center;/* centraliza verticalmente */
+}
+
+.review .stars {
+  display: flex;
+  justify-content: center; /* centraliza as estrelas */
+  align-items: center;     /* mantém todas na mesma linha */
+  margin-top: 1rem;
+}
+
+ .review .box-container .box:hover>*{
+    transform: scale(1.1);
+ }
+    
+
+ .address{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .review .box-container .box h3{
+    color:#c3858f;
+    font-size: 2rem;
+    margin: 1rem 0;
+ }
+
+ .footer{
+    text-align: center;
+ }
+
+ .footer .share{
+    padding: 1rem 0;
+ }
+
+ .footer .share img{
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+    
+ }
+
+.footer .share img:hover{
+    background-color: #EFBAD3;
+     transform: scale(1.1);
+}
+
