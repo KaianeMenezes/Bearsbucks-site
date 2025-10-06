@@ -1,2 +1,2 @@
 # Bearsbucks-site
-Estrutura de site html/css
+Estrutura de site html/css/javascript
